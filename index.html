@@ -1,1 +1,94 @@
-hello world
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=790">
+  <link rel="icon" type="image/png" href="img/Homer-Simpson-04-Happy-icon.png">
+  <title>Berkeley Work from Homers Club - local resources for remote workers</title>
+    <!-- INCLUDES -->
+    <!-- Base styles: Libraries -->
+    <link rel="stylesheet" href="css/lib/font-awesome-4.2.0.css" />
+    <link rel="stylesheet" href="css/lib/jquery.dataTables.min.css" />
+    
+    <!-- Base styles -->
+<!--     <link rel="stylesheet" href="css/base-datatable.css" /> -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- JS: Libraries -->
+    <script src="js/lib/jquery-1.11.1.js"></script>
+    <script src="js/lib/jquery.dataTables.min.js"></script>
+    <script src="js/lib/tabletop.js"></script>
+    <script src="js/lib/underscore.js"></script>
+    <script src="js/lib/handlebars-v1.3.0.js"></script>
+</head>
+<body>
+<header>
+<div id ="logo">
+<img src="img/homer_simpson4.jpg" width="100" style="float:left;margin-right: 10px;">
+<h1 style="display: inline">Work<br> from<br> Homers<br> Club</h1>
+</div>
+<h2>Berkeley</h2>
+<!-- <h3>local resources for remote workers</h3> -->
+<span class="beta">Beta!</span>
+</header>
+
+<nav>
+<hr>
+<div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <ul>
+        <li class="pure-menu-selected"><a href="index.html">Work-friendly cafes</a></li>
+        <li><a href="#" title="coming soon!">Co-working spaces</a></li>
+        <li><a href="#" title="coming soon!">Local news and links</a></li>
+    </ul>
+</div>
+<hr>
+</nav>
+
+  <span><a class="button-large pure-button pure-button-primary" href="https://docs.google.com/forms/d/1GwmiBB-n75N3OXgUvVwRM8JQ4G30NjeARcu-BtZsdSQ/viewform?usp=send_form" title="Opens a new tab" target="_blank"><i class="fa fa-plus"></i> Add to this list</a></span>
+<table id="searchable-table" class="pure-table pure-table-striped display">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Website</th>
+            <th>Location</th>
+            <th>Neighborhood</th>
+            <th>Wi-fi Quality</th>
+            <th>Seating</th>
+            <th class="large">Indoor/Outdoor</th>
+            <th class="large">Power outlets</th>
+            <th class="x-large">Noise level</th>
+            <th class="medium">Atmosphere</th>
+            <th class="medium">Food</th>
+            <th class="large">Bathroom</th>
+            <th>Recommended</th>
+            <th class="x-large">Other notes</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<script id="datatable-template" type="text/x-handlebars-template">
+{{#each elements}}
+<tr>
+    <td data-title="Name:">{{ name }}</td>
+    <td data-title="URL:"><a href="{{ url }}" target="_blank">{{ url }}</a></td>
+    <td data-title="Location:"><a href="https://www.google.com/maps/search/{{ location }}" target="_blank">{{ location }}</a></td>
+    <td data-title="Neighborhood:">{{ neighborhood }}</td>
+    <td data-title="Wi-fi Quality:">{{ wi-fiquality }}</td>
+    <td data-title="Seating:">{{ seating }}</td>
+    <td data-title="Indoor/Outdoor seating:" class="large">{{ indooroutdoorseating }}</td>
+    <td data-title="Power outlets:" class="large">{{ poweroutlets }}</td>
+    <td data-title="Noise level:" class="x-large">{{ noiselevel }}</td>
+    <td data-title="Atmosphere:" class="medium">{{ atmosphere }}</td>
+    <td data-title="Food:" class="medium">{{ food }}</td>
+    <td data-title="Bathroom:" class="large">{{ bathroom }}</td>
+    <td data-title="Recommended:">{{ recommended }}</td>
+    <td data-title="Other notes:" class="x-large">{{ othernotes }}</td>
+</tr>
+{{/each}}
+</script>
+
+<script src="js/datatable-tabletop-load.js"></script>
+
+</body>
+</html>
