@@ -67,7 +67,8 @@ function loadDataTable() {
         // Fix thead to top of page when scrolling past it
         "initComplete": function(settings, json) {
             $('#searchable-table').show();
-        }
+        },
+        "order": [[ 3, "asc" ]]
     });
 // Close loadDataTable
 };

@@ -60,7 +60,7 @@
             <th class="x-large">Noise level</th>
             <th class="medium">Atmosphere</th>
             <th class="medium">Food</th>
-            <th class="large">Bathroom</th>
+            <th class="x-large">Bathroom</th>
             <th>Recommended</th>
             <th class="x-large">Other notes</th>
         </tr>
@@ -70,7 +70,7 @@
 <script id="datatable-template" type="text/x-handlebars-template">
 {{#each elements}}
 <tr>
-    <td data-title="Name:">{{ name }}</td>
+    <td data-title="Name:"><strong>{{ name }}</strong></td>
     <td data-title="URL:"><a href="{{ url }}" target="_blank">{{ url }}</a></td>
     <td data-title="Location:"><a href="https://www.google.com/maps/search/{{ location }}" target="_blank">{{ location }}</a></td>
     <td data-title="Neighborhood:">{{ neighborhood }}</td>
@@ -81,7 +81,7 @@
     <td data-title="Noise level:" class="x-large">{{ noiselevel }}</td>
     <td data-title="Atmosphere:" class="medium">{{ atmosphere }}</td>
     <td data-title="Food:" class="medium">{{ food }}</td>
-    <td data-title="Bathroom:" class="large">{{ bathroom }}</td>
+    <td data-title="Bathroom:" class="x-large">{{ bathroom }}</td>
     <td data-title="Recommended:">{{ recommended }}</td>
     <td data-title="Other notes:" class="x-large">{{ othernotes }}</td>
 </tr>
@@ -90,5 +90,7 @@
 
 <script src="js/datatable-tabletop-load.js"></script>
 
+<footer>
+  <p>Work from Homers Club: Local resources for remote workers. &copy;2014 Leon Barnard</p>
 </body>
 </html>

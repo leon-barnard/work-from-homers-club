@@ -9,7 +9,7 @@
   }
   
   .button-large {
-    font-size: 110%;
+    font-size: 150%;
   }
   
   .dataTables_length, .dataTables_filter {
@@ -25,6 +25,18 @@
     padding: 5px;
     display: inline-block;
     width: 215px;
+  }
+  
+  table.pure-table {
+    table-layout: fixed;
+  }
+  table.pure-table td {
+    word-wrap: break-word;
+    padding: 10px 5px !important
+  }
+  
+  table.pure-table th {
+    padding: 15px 5px !important
   }
   
   .beta {
@@ -48,6 +60,14 @@
     display: inline;
   }
 */
+  
+  footer {
+    padding-top: 40px; 
+  }
+  footer p {
+    text-align: center;
+    color: #777;
+  }
   
   header h2 {
     font-size: 400%;
@@ -84,6 +104,10 @@
   display: table-cell
 }
 
+.button-large {
+    font-size: 110%;
+  }
+
 }
 
 
@@ -94,7 +118,7 @@
 
 }
 
-  @media (min-width: 1401px) {
+  @media (min-width: 1601px) {
 .x-large {
   display: table-cell
 }
