@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=790">
+  <link rel="icon" type="image/png" href="img/Homer-Simpson-04-Happy-icon.png">
+  <title>Berkeley Work from Homers Club - local resources for remote workers</title>
+    <!-- INCLUDES -->
+    <!-- Base styles: Libraries -->
+    <link rel="stylesheet" href="css/lib/font-awesome-4.2.0.css" />
+    <link rel="stylesheet" href="css/lib/jquery.dataTables.min.css" />
+    
+    <!-- Base styles -->
+<!--     <link rel="stylesheet" href="css/base-datatable.css" /> -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header>
+<div id ="logo">
+<img src="img/homer_simpson4.jpg" width="100" style="float:left;margin-right:10px;">
+<h1 style="display: inline">Work<br> from<br> Homers<br> Club</h1>
+</div>
+<h2>Berkeley</h2>
+<!-- <h3>local resources for remote workers</h3> -->
+<span class="beta">Beta!</span>
+</header>
+
+<nav>
+<hr>
+<div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <ul>
+        <li><a href="index.html">Work-friendly cafes</a></li>
+        <li class="pure-menu-selected"><a href="about.html" title="About this site">About this site</a></li>
+<!--
+        <li><a href="#" title="coming soon!">Co-working spaces</a></li>
+        <li><a href="#" title="coming soon!">Local news and links</a></li>
+-->
+    </ul>
+</div>
+<hr>
+</nav>
+<div class="content">
+<h2>Answers to some questions you might have about this site</h2>
+
+<h3>Q: What's this site all about?</h3>
+<p>I live in Berkeley, CA and work from home full-time. While I love it most of the time, sometimes I need or want to go somewhere else to work, usually a cafe. Since I'm sure there are other people nearby in a similar situation, I thought it would be neat to compile an opinionated community-curated list. I cobbled this site together using a bunch of free and open source tools and my own HTML and CSS knowledge. It ain't the prettiest, but it works.</p>
+
+<h3>Q: How does it work?</h3>
+<p>Well, pretty much, what you see is what you get. There's a list of all the cafes that have been added so far on the <a href="index.html">front page</a> and a button that allows anyone to add more. It uses Google Forms so there's no login or email address required. It's totally anonymous. There is also no approval process, it'll get added as soon as you submit the form and reload the page. If junk ends up there I suppose I'll clean it up.</p>
+
+<h3>Q: What if I don't agree with what someone wrote about a cafe?</h3>
+<p>I guess we'll cross that bridge when/if we come to it. Right now there's no way for anyone except me to edit the entries. If something is clearly wrong, let me know (use the form below) and I'll fix it.</p>
+
+<h3>Q: I have an idea for an improvement, can you add/change something?</h3>
+<p>This is just a side project for me, so, unless it's something small, probably not. I know there's a lot of really cool stuff that could be added with more skills and time. If you have either or both and want to help, use the form below and let me know! You can see the list of things that I'm thinking of doing with it <a href="https://github.com/balsamiqLeon/work-from-homers-club/issues">here</a>.</p>
+
+<h3>Q: Can you make one for my city?</h3>
+<p>I would <strong>love</strong> to see this spread to other cities. All the code is on <a href="https://github.com/balsamiqLeon/work-from-homers-club"><strong>GitHub</strong></a> right now, so fork away. If you're serious about using it for your city, let me know. That might motivate me to spend some time to improve this one...</p>
+
+<hr>
+<h3>Want to get involved or give feedback?</h3>
+<p>Great! Contact me using the form below.</p>
+<form method="POST" class="pure-form pure-form-stacked" action="http://formspree.io/leonbarnard@gmail.com">
+        <fieldset class="pure-input-1">
+            <label for="name">Name:</label>
+            <input class="pure-input-1-3" id="name" type="text" placeholder="Your name" name="name">
+            <label for="email">Email:</label>
+            <input class="pure-input-1-3" id="email" type="email" placeholder="Email address" name="_replyto">
+            <input type="hidden" name="_subject" value="Email from Work from Homers Club">
+            <label for="message">Message:</label>
+            <textarea class="pure-input-1-3" id="message" name="message" placeholder="Your message" rows="5"></textarea>
+            <button type="submit" class="pure-button pure-button-primary" value="Send">Send it</button>
+        </fieldset>
+      </form>
+
+</div>
+
+<footer>
+  <p>Work from Homers Club: Local resources for remote workers. &copy;2015 <a href="http://www.leonland.com/">Leon Barnard</a></p>
+</body>
+</html>

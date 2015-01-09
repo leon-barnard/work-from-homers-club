@@ -98,6 +98,10 @@
     display: none;
   }
   
+  .pure-form .pure-input-1-3 {
+    width: 100%;
+}
+  
   @media (min-width: 961px) {
 
 .medium {
@@ -107,6 +111,10 @@
 .button-large {
     font-size: 110%;
   }
+
+ .pure-form .pure-input-1-3 {
+    width: 33%;
+}
 
 }
 
