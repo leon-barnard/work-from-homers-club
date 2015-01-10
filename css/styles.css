@@ -16,6 +16,10 @@
     margin-bottom: 6px;
   }
   
+  p {
+    line-height: 1.4;
+  }
+  
   header {
 /*     display: inline-block; */
   }
@@ -45,7 +49,6 @@
     top: 30px;
     color: red;
     font-size: 200%;
-/*     font-style: italic; */
     -ms-transform: rotate(30deg);
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
